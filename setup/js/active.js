@@ -1,5 +1,3 @@
-window.addEventListener('load', setActiveNavLink, false);
-
 function setActiveNavLink() {
 "use strict";
 /* ----------------
@@ -35,3 +33,5 @@ function classToggle() {
 } // end classToggle()
 classToggle();
 } // end setActiveNavLink()
+
+document.addEventListener('load', setActiveNavLink, false);

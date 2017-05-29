@@ -1,5 +1,3 @@
-window.addEventListener('load', setGoogleAnalytics, false);
-
 function setUpTabs() {
 "use strict";
 /* ----------------
@@ -72,3 +70,5 @@ function changeTab() {
 } // end changeTab()
 	
 }; // end setUpTabs()
+
+document.addEventListener('load', setGoogleAnalytics, false);

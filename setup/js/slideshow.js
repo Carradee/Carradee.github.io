@@ -1,5 +1,3 @@
-window.addEventListener('load', setGoogleAnalytics, false);
-
 function setUpSlideshow() {
 "use strict";
 	/* ----------------
@@ -50,3 +48,5 @@ figures[hide_pos].classList.remove("show");	figures[show_pos].classList.add("sho
 } // end changeSlide(n)
 
 } // setUpSlideshow()
+
+document.addEventListener('load', setUpSlideshow, false);
