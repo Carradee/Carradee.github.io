@@ -1,0 +1,9 @@
+# for information about the robots.txt standard, see:
+# http://www.robotstxt.org/robotstxt.html
+
+# ########################
+# Set the parts of the site that shouldn't be indexed by search engines.
+# ########################
+
+User-Agent: *
+Disallow: /error/
