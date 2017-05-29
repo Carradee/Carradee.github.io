@@ -71,4 +71,4 @@ function changeTab() {
 	
 }; // end setUpTabs()
 
-document.addEventListener('load', setUpTabs, false);
+document.addEventListener('load', setUpTabs);
