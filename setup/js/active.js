@@ -1,3 +1,6 @@
+window.addEventListener('load', setActiveNavLink, false);
+
+function setActiveNavLink() {
 "use strict";
 /* ----------------
   If the page is taller than viewport, convert to columns.
@@ -31,3 +34,4 @@ function classToggle() {
 	}); // end forEach
 } // end classToggle()
 classToggle();
+} // end setActiveNavLink()

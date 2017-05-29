@@ -1,4 +1,6 @@
-window.onload = function(){
+window.addEventListener('load', setGoogleAnalytics, false);
+
+function setUpTabs() {
 "use strict";
 /* ----------------
   TABS
@@ -69,4 +71,4 @@ function changeTab() {
 	} // end if 
 } // end changeTab()
 	
-}; // end window.onload
+}; // end setUpTabs()
