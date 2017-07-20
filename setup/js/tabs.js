@@ -32,6 +32,7 @@ function getCurrentButton() {
 } // end getCurrentButton()
 
 // get ".active" section
+
 function getCurrentSection() {
 	sections.forEach(function(element){
 		if (element.classList.contains('active')) {
@@ -41,12 +42,14 @@ function getCurrentSection() {
 	return current_section;
 } // end getCurrentSection()
 
+/*
 // remove ".active" from inactive sections
 function hideTab() {
   console.log("hideTab() has been run");
   current_section.classList.remove("active");
 	current_button.classList.remove("active");
 } // end hideTab()
+*/
 
 // add ".active" to active section
 function showTab(id) {
@@ -54,6 +57,9 @@ function showTab(id) {
   sections.forEach(function(element){
     if (element.id === id) {
       element.classList.add("active");
+    } else { /* CHANGED TO USE "ELSE" CALL */
+			current_section.classList.remove("active");
+			current_button.classList.remove("active");
     } // end if
   }); // end forEach
 } // end showTab(id)
@@ -64,7 +70,9 @@ function changeTab() {
 	current_section = getCurrentSection();
 	if (this.name !== current_button.name) {
 		this.classList.add("active");
+/*
 		hideTab();
+*/
 		showTab(this.name);
 	} // end if 
 } // end changeTab()
